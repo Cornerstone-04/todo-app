@@ -29,7 +29,7 @@ code {
 }
 
 .Header{
-  color: white;
+  color: #fff;
   text-transform: uppercase;
   text-shadow: black 3px 3px 6px;
 }
@@ -45,6 +45,13 @@ code {
   border-radius: 5px;
   width: 23%;
   font-weight: bolder;
+  cursor: pointer;
+}
+
+
+.BtnDiv button:hover{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.562);
 }
 
 .inputSection {

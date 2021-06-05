@@ -4,7 +4,7 @@ export default function TodoList() {
     return (
         <div className="Header">
             <h1>
-                Todo List App
+                To-do List App
             </h1>
         </div>
     )
