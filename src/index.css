@@ -5,6 +5,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
+  background-color: #e2dfdf;
 }
 
 code {
@@ -17,21 +18,26 @@ code {
   padding: 10px;
   display: block;
   justify-content: center;
-  width: 300px;
+  width: 350px;
   height: 400px;
   max-height: 400px;
-  background-color: rgb(30, 68, 104);
+  background-color: #0f2c47;
   border: 2px solid black;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  box-shadow: 5px 5px 10px black;
+  box-shadow: 5px 5px 10px #000000;
+  overflow: scroll;
+}
+
+.App::-webkit-scrollbar{
+  display: none;
 }
 
 .Header{
   color: #fff;
   text-transform: uppercase;
-  text-shadow: black 3px 3px 6px;
+  text-shadow: #000000 3px 3px 6px;
 }
 
 .BtnDiv{
@@ -41,28 +47,84 @@ code {
 .BtnDiv button{
   margin: 5px;
   padding: 5px ;
-  border: 1px solid black;
+  border: 1px solid #000000;
   border-radius: 5px;
   width: 23%;
   font-weight: bolder;
   cursor: pointer;
 }
 
-
-.BtnDiv button:hover{
-  color: white;
-  background-color: rgba(0, 0, 0, 0.562);
-}
-
 .inputSection {
   width: 100%;
   margin: 0 auto;
+  margin-bottom: 15px;
 }
 
 .inputSection input{
   padding: 5px;
-  width: 90%;
+  width: 75%;
   outline: none;
-  border: none;
+  border: 1px solid #20232a;
   border-radius: 5px;
+}
+
+.inputSection button{
+  margin: 0 4px;
+  width: 10%;
+  border: 1px solid #20232a;
+  border-radius: 5px;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.inputSection button:hover{
+  color: white;
+  background-color: #0da00d;
+}
+
+.messageArea{
+  padding: 0;
+}
+
+.messageArea div{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 90%;
+  background-color: #e6e3e3;
+  border: 1px solid #20232a;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 0 1px;
+  height: 1%;
+}
+
+.messageArea div p:nth-child(1){
+  margin-left: 5px;
+  font-size: 15px;
+  vertical-align: middle;
+}
+
+.messageArea button:nth-child(1){
+  background-color: inherit;
+  color: #1cc01c;
+  margin: 0 auto;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.messageArea button:nth-child(2){
+  background-color: inherit;
+  color: #ff0000;
+  margin: 0 auto;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.messageArea button:hover{
+ color: #20232a;
 }
