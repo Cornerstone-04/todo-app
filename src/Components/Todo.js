@@ -36,29 +36,6 @@ export default function Todo({todo, setTodo,  setEditTodo}) {
             )
             
             }
-
-
-            {/* <div>
-                <p>Get a new pair of shoes.</p>
-                <p>
-                <button><FontAwesomeIcon icon={faEdit} /></button>
-                <button><FontAwesomeIcon icon={faTrashAlt} /></button>
-                </p> 
-            </div>
-            <div>
-                <p>Replace broken phone screen.</p>
-                <p>
-                <button><FontAwesomeIcon icon={faEdit} /></button>
-                <button><FontAwesomeIcon icon={faTrashAlt} /></button>
-                </p> 
-            </div>
-            <div>
-                <p>Confirm course registration.</p>
-                <p>
-                <button><FontAwesomeIcon icon={faEdit} /></button>
-                <button><FontAwesomeIcon icon={faTrashAlt} /></button>
-                </p> 
-            </div> */}
         </div>
     )
 }
