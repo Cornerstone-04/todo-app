@@ -22,11 +22,11 @@ code {
   height: 400px;
   max-height: 400px;
   background-color: #0f2c47;
-  border: 2px solid black;
+  border: 1px solid black;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  box-shadow: 5px 5px 10px #000000;
+  box-shadow: 5px 5px 20px 5px #000000;
   overflow: scroll;
 }
 
@@ -40,27 +40,13 @@ code {
   text-shadow: #000000 3px 3px 6px;
 }
 
-.BtnDiv{
-  margin: 5px auto;
-}
-
-.BtnDiv button{
-  margin: 5px;
-  padding: 5px ;
-  border: 1px solid #000000;
-  border-radius: 5px;
-  width: 23%;
-  font-weight: bolder;
-  cursor: pointer;
-}
-
-.inputSection {
+.form {
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 15px;
 }
 
-.inputSection input{
+.inputSection{
+  margin-bottom: 20px;
   padding: 5px;
   width: 75%;
   outline: none;
@@ -68,8 +54,11 @@ code {
   border-radius: 5px;
 }
 
-.inputSection button{
+form button{
   margin: 0 4px;
+  background-color: #0da00d;
+  color: #ffffff;
+  font-weight: bolder;
   width: 10%;
   border: 1px solid #20232a;
   border-radius: 5px;
@@ -77,16 +66,11 @@ code {
   cursor: pointer;
 }
 
-.inputSection button:hover{
-  color: white;
-  background-color: #0da00d;
-}
-
 .messageArea{
   padding: 0;
 }
 
-.messageArea div{
+.todo-list{
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -97,26 +81,29 @@ code {
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  padding: 0 1px;
-  height: 1%;
+  padding: 10px 0px;
+  height: 30px;
 }
 
-.messageArea div p:nth-child(1){
-  margin-left: 5px;
-  font-size: 15px;
-  vertical-align: middle;
+.list{
+  background-color: #e6e3e3;
+  border: none;
+  outline: none;
+  padding: 10px 5px;
+  width: 50%;
+  margin: 0 0 0 0;
 }
 
-.messageArea button:nth-child(1){
+.edit-btn{
   background-color: inherit;
-  color: #1cc01c;
+  color: #0065c4;
   margin: 0 auto;
   border: none;
   padding: 5px;
   cursor: pointer;
 }
 
-.messageArea button:nth-child(2){
+.delete-btn{
   background-color: inherit;
   color: #ff0000;
   margin: 0 auto;
@@ -125,6 +112,6 @@ code {
   cursor: pointer;
 }
 
-.messageArea button:hover{
+.todo-list button:hover{
  color: #20232a;
 }

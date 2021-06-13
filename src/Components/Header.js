@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function TodoList() {
+export default function Header() {
     return (
         <div className="Header">
             <h1>
