@@ -18,7 +18,7 @@ code {
   padding: 10px;
   display: block;
   justify-content: center;
-  width: 350px;
+  width: 300px;
   height: 400px;
   max-height: 400px;
   background-color: #0f2c47;
@@ -90,7 +90,7 @@ form button{
   border: none;
   outline: none;
   padding: 10px 5px;
-  width: 50%;
+  width: 77%;
   margin: 0 0 0 0;
 }
 
