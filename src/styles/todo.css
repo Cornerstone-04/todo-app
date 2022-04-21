@@ -1,0 +1,59 @@
+.todo-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+    width: 87%;
+    height: 70px;
+    background-color: #e6e3e3;
+    border: 1px solid #20232a;
+}
+
+@media (max-width:800px) {
+    .todo-list {
+        width: 90%;
+    }
+}
+
+.list {
+    background-color: #e6e3e3;
+    border: none;
+    outline: none;
+    margin-left: 20px;
+    font-size: 1.3rem;
+    width: 70%;
+    height: 100%;
+    padding: 0;
+}
+
+.edit-btn {
+    background-color: inherit;
+    color: #198754;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background-color: inherit;
+    color: #FF2400;
+    border: none;
+    cursor: pointer;
+}
+
+.todo-list button:hover {
+    color: #20232a;
+}
+
+.eod {
+    margin-right: 2%;
+    width: 10%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 5px;
+}
+
+.eod button {
+    font-size: 1.5rem;
+    transition: .3s linear;
+}
