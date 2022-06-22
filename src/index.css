@@ -7,11 +7,10 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-    /* background-color: #e2dfdf; */
 }
 
 code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+    font-family: 'Dank Mono', monospace;
 }
 
 body::-webkit-scrollbar {

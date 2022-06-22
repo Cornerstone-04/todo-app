@@ -5,8 +5,7 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    padding-bottom: 30px;
-    /* background: #2e5090; */
+    padding-bottom: 20px;
 }
 
 .App {
