@@ -70,11 +70,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 
 .eod button {
     font-size: 1rem;
     transition: .3s linear;
+    width: 1rem;
 }
 
 .date_holder {
