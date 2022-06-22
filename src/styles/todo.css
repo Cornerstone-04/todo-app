@@ -66,11 +66,10 @@
 }
 
 .eod {
-    width: 10%;
+    width: 40px;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
-    gap: 5px;
 }
 
 .eod button {
