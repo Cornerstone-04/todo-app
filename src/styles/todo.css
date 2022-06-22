@@ -66,17 +66,17 @@
 }
 
 .eod {
-    width: 40px;
+    width: 100%;
+    max-width: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 10px;
 }
 
 .eod button {
     font-size: 1rem;
     transition: .3s linear;
-    width: 1rem;
+    width: 1.5rem;
 }
 
 .date_holder {
