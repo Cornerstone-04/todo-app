@@ -1,42 +1,62 @@
-.todo-list {
+@import url('https://fonts.googleapis.com/family=Karla:wght@700&display=swap');
+.messageArea {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px auto;
-    width: 87%;
-    height: 70px;
-    background-color: #e6e3e3;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.todo-list {
+    margin: 0 auto;
+    width: calc(86% - 40px);
+    padding: 0 20px;
+    min-height: 70px;
+    background-color: #d8d4d4;
     border: 1px solid #20232a;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.list_holder {
+    width: 100%;
+    background: transparent;
 }
 
 @media (max-width:800px) {
     .todo-list {
-        width: 90%;
+        width: calc(91% - 40px);
     }
 }
 
 .list {
-    background-color: #e6e3e3;
+    background: transparent;
     border: none;
     outline: none;
-    margin-left: 20px;
-    font-size: 1.3rem;
-    width: 70%;
+    width: 100%;
     height: 100%;
     padding: 0;
-    font-family: "Poppins", sans-serif;
+    display: flex;
+    text-align: left;
+    justify-content: flex-start;
+    margin-bottom: 0;
+    word-break: break-all;
+    font: 1.25rem 'Karla', sans-serif;
 }
 
 .edit-btn {
     background-color: inherit;
-    color: #198754;
+    color: #178131;
     border: none;
     cursor: pointer;
 }
 
 .delete-btn {
     background-color: inherit;
-    color: #FF2400;
+    color: #c03d29;
     border: none;
     cursor: pointer;
 }
@@ -46,7 +66,6 @@
 }
 
 .eod {
-    margin-right: 2%;
     width: 10%;
     display: flex;
     justify-content: right;
@@ -55,6 +74,13 @@
 }
 
 .eod button {
-    font-size: 1.5rem;
+    font-size: 1rem;
     transition: .3s linear;
+}
+
+.date_holder {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font: 700 1rem 'Karla', sans-serif;
 }

@@ -2,9 +2,8 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     width: 100%;
 }
 
@@ -12,40 +11,34 @@ form {
     font-size: 1.5rem;
     padding: 0 5px 0 10px;
     width: 70%;
-    height: 70px;
+    height: 61px;
     outline: none;
-    border: 2px solid transparent;
-    border-radius: 5px;
+    border: 2px solid none;
     transition: .3s linear;
     font-family: "Poppins", sans-serif;
-}
-
-.inputSection:hover,
-.inputSection focus {
-    border: 2px solid #1b03a3;
+    outline: none;
 }
 
 form button {
     font-family: "Poppins", sans-serif;
-    background-color: #5cb85c;
+    background-color: #6d5cb8;
     color: #ffffff;
     font-weight: 700;
     font-size: 2rem;
     width: 15%;
-    height: 75px;
-    border: 1px solid #20232a;
-    border-radius: 5px;
+    height: 65px;
+    padding: 0;
+    border: none;
     cursor: pointer;
-    transition: .5s linear;
-    box-shadow: 4px 4px 10px #16161d;
+    transition: .2s linear;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+form button:active,
 form button:hover {
-    background-color: #198754;
-    box-shadow: none;
+    background-color: #311987;
 }
 
 @media (max-width:800px) and (min-width:550px) {
