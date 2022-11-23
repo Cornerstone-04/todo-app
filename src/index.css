@@ -52,7 +52,7 @@ code {
     @apply flex flex-col items-center gap-[15px] p-0 w-[90%] mx-auto md:w-[50%] min-h-full;
   }
   .todo__list {
-    @apply m-0 w-full px-[20px] py-[10px] min-h-[70px] bg-black-gradient border border-[#20232a] flex justify-center items-start flex-col gap-[20px] text-white;
+    @apply m-0 w-full px-[10px] py-[5px] min-h-[80px] bg-black-gradient border border-[#20232a] flex justify-between items-start flex-col  text-white;
   }
   .list__holder {
     @apply w-full bg-transparent;

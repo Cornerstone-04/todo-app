@@ -563,21 +563,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.App{
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 4 15 / var(--tw-bg-opacity));
-  text-align: center;
-}
-
 .message__area{
   margin-left: auto;
   margin-right: auto;
@@ -599,19 +584,18 @@ video {
 .todo__list{
   margin: 0px;
   display: flex;
-  min-height: 70px;
+  min-height: 80px;
   width: 100%;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
-  gap: 20px;
+  justify-content: space-between;
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(32 35 42 / var(--tw-border-opacity));
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   background: linear-gradient(
@@ -705,13 +689,24 @@ video {
   }
 }
 
-.m-0{
-  margin: 0px;
+.fixed{
+  position: fixed;
 }
 
-.my-0{
-  margin-top: 0px;
-  margin-bottom: 0px;
+.relative{
+  position: relative;
+}
+
+.bottom-\[15px\]{
+  bottom: 15px;
+}
+
+.right-\[15px\]{
+  right: 15px;
+}
+
+.m-0{
+  margin: 0px;
 }
 
 .mx-auto{
@@ -719,24 +714,29 @@ video {
   margin-right: auto;
 }
 
-.mb-\[3rem\]{
-  margin-bottom: 3rem;
+.my-0{
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .mb-\[50px\]{
   margin-bottom: 50px;
 }
 
+.mb-\[2\.5rem\]{
+  margin-bottom: 2.5rem;
+}
+
 .flex{
   display: flex;
 }
 
-.h-\[6\.5rem\]{
-  height: 6.5rem;
-}
-
 .h-\[50px\]{
   height: 50px;
+}
+
+.h-\[4rem\]{
+  height: 4rem;
 }
 
 .w-full{
@@ -753,6 +753,10 @@ video {
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+.flex-col{
+  flex-direction: column;
 }
 
 .items-center{
@@ -799,24 +803,28 @@ video {
   padding-right: 20px;
 }
 
-.font-karla{
-  font-family: Karla, serif;
+.text-center{
+  text-align: center;
 }
 
-.text-\[2rem\]{
-  font-size: 2rem;
+.font-karla{
+  font-family: Karla, serif;
 }
 
 .text-\[1\.2rem\]{
   font-size: 1.2rem;
 }
 
-.font-bold{
-  font-weight: 700;
+.text-\[2\.5rem\]{
+  font-size: 2.5rem;
 }
 
 .font-black{
   font-weight: 900;
+}
+
+.font-bold{
+  font-weight: 700;
 }
 
 .uppercase{
@@ -853,15 +861,16 @@ video {
 }
 
 ::-webkit-scrollbar-track {
-  background: #023787;
-  box-shadow: inset 0 0 5px #616161;
-  border-left: 1px solid #200e32;
+  background: #00040f;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #fff;
+  background: linear-gradient(
+    157.81deg,
+    #5c6ee6 51.94%,
+    #3355cf 90.29%
+  );
   width: 5px;
-  border-left: 1px solid #200e32;
   border-radius: 10px;
 }
 
