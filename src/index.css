@@ -32,11 +32,7 @@ code {
 }
 
 .bg-blue-gradient {
-  background: linear-gradient(
-    157.81deg,
-    #5c6ee6 51.94%,
-    #3355cf 90.29%
-  );
+  background: linear-gradient(157.81deg, #5c6ee6 51.94%, #3355cf 90.29%);
 }
 .bg-black-gradient {
   background: linear-gradient(
@@ -73,6 +69,6 @@ code {
     @apply text-[0.75rem] w-[1.5rem];
   }
   .date__holder {
-    @apply w-full flex justify-between font-bold text-xs md:text-sm font-karla;
+    @apply w-full flex justify-between font-bold text-[10px] md:text-xs lg:text-sm font-karla;
   }
 }

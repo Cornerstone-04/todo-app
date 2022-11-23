@@ -677,12 +677,18 @@ video {
   width: 100%;
   justify-content: space-between;
   font-family: Karla, serif;
-  font-size: 0.75rem;
-  line-height: 1rem;
+  font-size: 10px;
   font-weight: 700;
 }
 
 @media (min-width: 768px){
+  .date__holder{
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width: 1024px){
   .date__holder{
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -865,11 +871,7 @@ video {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(
-    157.81deg,
-    #5c6ee6 51.94%,
-    #3355cf 90.29%
-  );
+  background: linear-gradient(157.81deg, #5c6ee6 51.94%, #3355cf 90.29%);
   width: 5px;
   border-radius: 10px;
 }
@@ -887,11 +889,7 @@ code {
 }
 
 .bg-blue-gradient {
-  background: linear-gradient(
-    157.81deg,
-    #5c6ee6 51.94%,
-    #3355cf 90.29%
-  );
+  background: linear-gradient(157.81deg, #5c6ee6 51.94%, #3355cf 90.29%);
 }
 
 .bg-black-gradient {
