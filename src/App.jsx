@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react'
-import "./index.css"
-import { Header, Form, List } from './Components';
+import React, { useState, useEffect } from "react";
+import "./index.css";
+import { Header, Form, List } from "./Components";
 
 function App() {
   const initialState = JSON.parse(localStorage.getItem("todo")) || [];
@@ -23,10 +23,7 @@ function App() {
         editTodo={editTodo}
         setEditTodo={setEditTodo}
       />
-      <List
-        todo={todo}
-        setTodo={setTodo}
-        setEditTodo={setEditTodo} />
+      <List todo={todo} setTodo={setTodo} setEditTodo={setEditTodo} />
     </div>
   );
 }

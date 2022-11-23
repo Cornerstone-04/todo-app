@@ -15,12 +15,12 @@ const List = ({ todo, setTodo, setEditTodo }) => {
   const date = Moment().format("DD/MM/YYYY");
 
   return (
-    <div className="message__area">
+    <main className="message__area">
       {" "}
       {todo.map((todo) => (
         <div className="todo__list" key={todo.id}>
           <div className="list__holder">
-            <p className={` list ${todo.completed ? "complete" : ""}`}>
+            <p className={`list ${todo.completed ? "complete" : ""}`}>
               {todo.title}
             </p>
           </div>
@@ -32,21 +32,19 @@ const List = ({ todo, setTodo, setEditTodo }) => {
                 className="edit__btn eod_btn"
                 onClick={() => editList(todo)}
               >
-                {/* <FontAwesomeIcon icon={faEdit} />{" "} */}
                 📝
               </button>{" "}
               <button
                 className="delete__btn eod__btn"
                 onClick={() => deleteTodo(todo)}
               >
-                {/* <FontAwesomeIcon icon={faTrashAlt} />{" "} */}
                 🗑️
               </button>{" "}
             </div>{" "}
           </div>
         </div>
       ))}{" "}
-    </div>
+    </main>
   );
 };
 
