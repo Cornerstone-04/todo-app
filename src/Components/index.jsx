@@ -1,5 +1,5 @@
 import Header from "./Header";
-import Text from "./Text";
-import Todo from "./Todo";
+import Form from "./Form";
+import List from "./List";
 
-export {Header, Text, Todo}
+export { Header, Form, List };

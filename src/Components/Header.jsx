@@ -1,12 +1,12 @@
-import React from 'react'
-import "../index.css"
+import React from "react";
+import "../index.css";
 
-export default function Header() {
-    return (
-        <div className="text-white uppercase w-full h-[6.5rem] flex justify-center items-center border-b-2 border-b-white my-0 mx-auto mb-[5rem] bg-[#2b096b]">
-            <h1 className='font-bold text-[3rem] font-karla m-0'>
-                Todo App
-            </h1>
-        </div>
-    )
-}
+const Header = () => {
+  return (
+    <div className="text-white uppercase w-full h-[6.5rem] flex justify-center items-center my-0 mx-auto mb-[3rem] bg-[#00040f]">
+      <h1 className="font-bold text-[2rem] font-karla m-0">Todo List</h1>
+    </div>
+  );
+};
+
+export default Header;

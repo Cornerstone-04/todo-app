@@ -34,32 +34,38 @@ code {
   font-family: "Poppins", sans-serif;
 }
 
+.bg-blue-gradient {
+  background: linear-gradient(
+    157.81deg,
+    #5c6ee6 51.94%,
+    #3355cf 90.29%
+  );
+}
+.bg-black-gradient {
+  background: linear-gradient(
+    -168.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+}
+
 @layer components {
   .App {
-    @apply flex flex-col justify-center items-center w-full min-h-[screen] text-center mx-auto my-0;
+    @apply flex flex-col justify-center items-center w-full text-center mx-auto my-0 bg-[#00040f];
   }
 
-  .form {
-    @apply w-full flex justify-center items-center my-0 mx-auto mb-[50px];
-  }
-
-  .input__section {
-    @apply py-0 pl-[5px] pr-[10px] w-[70%] outline-none h-[65px] border-2 border-transparent text-[1.5rem] font-karla bg-white transition-all ease-linear;
-  }
-  .button__add {
-    @apply font-black sm:text-[2rem] text-[1rem] font-karla bg-[#6d5cb8] text-white w-[15%] h-[65px] p-0 border-0 cursor-pointer flex justify-center items-center hover:bg-[#311987] active:bg-[#311987] transition-all ease-linear;
-  }
   .message__area {
-    @apply flex flex-col items-center gap-[15px] p-0 w-full mx-auto;
+    @apply flex flex-col items-center gap-[15px] p-0 w-[90%] mx-auto md:w-[50%] min-h-full;
   }
   .todo__list {
-    @apply m-0 w-[85%] px-[20px] py-0 min-h-[70px] bg-[#d8d4d4] border border-[#20232a] flex justify-center items-start flex-col gap-[10px];
+    @apply m-0 w-full px-[20px] py-[10px] min-h-[70px] bg-black-gradient border border-[#20232a] flex justify-center items-start flex-col gap-[20px] text-white;
   }
   .list__holder {
     @apply w-full bg-transparent;
   }
   .list {
-    @apply bg-transparent border-0 outline-none w-full h-full flex p-0 text-left justify-start mb-0 break-words text-[1.25rem] font-karla;
+    @apply bg-transparent border-0 outline-none w-full h-full flex p-0 text-left justify-start mb-0 break-words text-base md:text-[18px] font-karla;
   }
   .edit__btn {
     @apply bg-inherit text-[#178131] border-none cursor-pointer hover:text-[#20232a];
@@ -74,6 +80,6 @@ code {
     @apply text-[0.75rem] w-[1.5rem];
   }
   .date__holder {
-    @apply w-full flex justify-between font-bold text-[1rem] font-karla;
+    @apply w-full flex justify-between font-bold text-xs md:text-sm font-karla;
   }
 }

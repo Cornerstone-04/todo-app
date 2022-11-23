@@ -1,10 +1,8 @@
 import React from "react";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faEdit, faTrashAlt } from "@fortawesome/free-solid-svg-icons";
-import "../index.css"
+import "../index.css";
 import Moment from "moment";
 
-export default function Todo({ todo, setTodo, setEditTodo }) {
+const List = ({ todo, setTodo, setEditTodo }) => {
   const editList = ({ id }) => {
     const findTodo = todo.find((todo) => todo.id === id);
     setEditTodo(findTodo);
@@ -30,11 +28,17 @@ export default function Todo({ todo, setTodo, setEditTodo }) {
             {" "}
             <p className="date"> {date} </p>
             <div className="eod">
-              <button className="edit__btn eod_btn" onClick={() => editList(todo)}>
+              <button
+                className="edit__btn eod_btn"
+                onClick={() => editList(todo)}
+              >
                 {/* <FontAwesomeIcon icon={faEdit} />{" "} */}
                 📝
               </button>{" "}
-              <button className="delete__btn eod__btn" onClick={() => deleteTodo(todo)}>
+              <button
+                className="delete__btn eod__btn"
+                onClick={() => deleteTodo(todo)}
+              >
                 {/* <FontAwesomeIcon icon={faTrashAlt} />{" "} */}
                 🗑️
               </button>{" "}
@@ -44,4 +48,6 @@ export default function Todo({ todo, setTodo, setEditTodo }) {
       ))}{" "}
     </div>
   );
-}
+};
+
+export default List;

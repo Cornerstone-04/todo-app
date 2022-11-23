@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import "./index.css"
-import { Header, Text, Todo } from './Components';
+import { Header, Form, List } from './Components';
 
 function App() {
   const initialState = JSON.parse(localStorage.getItem("todo")) || [];
@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Text
+      <Form
         input={input}
         setInput={setInput}
         todo={todo}
@@ -23,7 +23,7 @@ function App() {
         editTodo={editTodo}
         setEditTodo={setEditTodo}
       />
-      <Todo
+      <List
         todo={todo}
         setTodo={setTodo}
         setEditTodo={setEditTodo} />
