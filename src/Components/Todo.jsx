@@ -1,6 +1,7 @@
 import React from "react";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faEdit, faTrashAlt } from "@fortawesome/free-solid-svg-icons";
+import "../index.css"
 import Moment from "moment";
 
 export default function Todo({ todo, setTodo, setEditTodo }) {
@@ -31,9 +32,11 @@ export default function Todo({ todo, setTodo, setEditTodo }) {
             <div className="eod">
               <button className="edit__btn eod_btn" onClick={() => editList(todo)}>
                 {/* <FontAwesomeIcon icon={faEdit} />{" "} */}
+                📝
               </button>{" "}
               <button className="delete__btn eod__btn" onClick={() => deleteTodo(todo)}>
                 {/* <FontAwesomeIcon icon={faTrashAlt} />{" "} */}
+                🗑️
               </button>{" "}
             </div>{" "}
           </div>

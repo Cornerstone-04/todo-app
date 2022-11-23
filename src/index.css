@@ -30,64 +30,50 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: radial-gradient(
-    at top left,
-    rgba(146, 43, 225, 1) 0%,
-    rgba(43, 9, 107, 1) 100%
-  );
-  background-repeat: no-repeat;
-  width: 100%;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  padding-bottom: 20px;
-  scroll-behavior: smooth;
-}
-
 code {
   font-family: "Poppins", sans-serif;
 }
 
-.App {
-  @apply flex justify-center items-center w-full min-h-full text-center mx-auto my-0;
-}
-.form {
-  @apply w-full flex justify-center items-center my-0 mx-auto mb-[50px];
-}
-.input__section {
-  @apply py-0 pl-[5px] pr-[10px] w-[70%] outline-none h-[61px] border-2 border-transparent text-[1.5rem] font-karla bg-white;
-}
-.button__add {
-  @apply font-black text-[2rem] font-karla bg-[#6d5cb8] text-white w-[15%] h-[65px] p-0 border-0 cursor-pointer flex justify-center items-center hover:bg-[#311987] active:bg-[#311987];
-}
-.message__area {
-  @apply flex flex-col gap-[15px] p-0 m-0;
-}
-.todo__list {
-  @apply m-0 w-[calc(86% - 40px)] px-[20px] py-0 min-h-[70px] bg-[#d8d4d4] border border-[#20232a] flex justify-center items-start flex-col gap-[10px];
-}
-.list__holder {
-  @apply w-full bg-transparent;
-}
-.list {
-  @apply bg-transparent border-0 outline-none w-full h-full flex p-0 text-left justify-start mb-0 break-words text-[1.25rem] font-karla;
-}
-.edit__btn {
-  @apply bg-inherit text-[#178131] border-none cursor-pointer hover:text-[#20232a];
-}
-.delete__btn {
-  @apply bg-inherit text-[#c03d29] hover:text-[#20232a] border-none cursor-pointer;
-}
-.eod {
-  @apply w-full max-w-full flex justify-between items-center;
-}
-.eod__btn {
-  @apply text-[0.75rem] w-[1.5rem];
-}
-.date__holder {
-  @apply w-full flex justify-between font-bold text-[1rem] font-karla;
+@layer components {
+  .App {
+    @apply flex flex-col justify-center items-center w-full min-h-[screen] text-center mx-auto my-0;
+  }
+
+  .form {
+    @apply w-full flex justify-center items-center my-0 mx-auto mb-[50px];
+  }
+
+  .input__section {
+    @apply py-0 pl-[5px] pr-[10px] w-[70%] outline-none h-[65px] border-2 border-transparent text-[1.5rem] font-karla bg-white transition-all ease-linear;
+  }
+  .button__add {
+    @apply font-black sm:text-[2rem] text-[1rem] font-karla bg-[#6d5cb8] text-white w-[15%] h-[65px] p-0 border-0 cursor-pointer flex justify-center items-center hover:bg-[#311987] active:bg-[#311987] transition-all ease-linear;
+  }
+  .message__area {
+    @apply flex flex-col items-center gap-[15px] p-0 w-full mx-auto;
+  }
+  .todo__list {
+    @apply m-0 w-[85%] px-[20px] py-0 min-h-[70px] bg-[#d8d4d4] border border-[#20232a] flex justify-center items-start flex-col gap-[10px];
+  }
+  .list__holder {
+    @apply w-full bg-transparent;
+  }
+  .list {
+    @apply bg-transparent border-0 outline-none w-full h-full flex p-0 text-left justify-start mb-0 break-words text-[1.25rem] font-karla;
+  }
+  .edit__btn {
+    @apply bg-inherit text-[#178131] border-none cursor-pointer hover:text-[#20232a];
+  }
+  .delete__btn {
+    @apply bg-inherit text-[#c03d29] hover:text-[#20232a] border-none cursor-pointer;
+  }
+  .eod {
+    @apply flex justify-between items-center;
+  }
+  .eod__btn {
+    @apply text-[0.75rem] w-[1.5rem];
+  }
+  .date__holder {
+    @apply w-full flex justify-between font-bold text-[1rem] font-karla;
+  }
 }
