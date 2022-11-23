@@ -10,15 +10,12 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #023787;
-  box-shadow: inset 0 0 5px #616161;
-  border-left: 1px solid #200e32;
+  background: #00040f;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #fff;
+  @apply bg-blue-gradient;
   width: 5px;
-  border-left: 1px solid #200e32;
   border-radius: 10px;
 }
 
@@ -51,10 +48,6 @@ code {
 }
 
 @layer components {
-  .App {
-    @apply flex flex-col justify-center items-center w-full text-center mx-auto my-0 bg-[#00040f];
-  }
-
   .message__area {
     @apply flex flex-col items-center gap-[15px] p-0 w-[90%] mx-auto md:w-[50%] min-h-full;
   }
