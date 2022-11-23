@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import "../index.css";
 import { v4 as uuidv4 } from "uuid";
 
 const Form = ({ input, setInput, todo, setTodo, editTodo, setEditTodo }) => {
