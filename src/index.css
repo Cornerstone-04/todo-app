@@ -59,14 +59,8 @@ code {
   .edit__btn {
     @apply bg-inherit text-[#178131] border-none cursor-pointer hover:text-[#20232a];
   }
-  .delete__btn {
-    @apply bg-inherit text-[#c03d29] hover:text-[#20232a] border-none cursor-pointer;
-  }
   .eod {
     @apply flex justify-between items-center;
-  }
-  .eod__btn {
-    @apply text-[0.75rem] w-[1.5rem];
   }
   .date__holder {
     @apply w-full flex justify-between font-bold text-[10px] md:text-xs lg:text-sm font-karla;

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Header, Form, List } from "./Components";
+import { Arrow } from "./Components/icons";
 
 const App = () => {
   const initialState = JSON.parse(localStorage.getItem("todo")) || [];
@@ -42,8 +43,11 @@ const App = () => {
       />
       <List todo={todo} setTodo={setTodo} setEditTodo={setEditTodo} />
       {displayArrow && (
-        <button className="fixed bottom-[15px] right-[15px]" onClick={scrollUp}>
-          ⬆️
+        <button
+          className="flex justify-center items-center w-10 h-10 fixed bottom-[10px] right-[10px] cursor-pointer"
+          onClick={scrollUp}
+        >
+          <Arrow />
         </button>
       )}
     </div>

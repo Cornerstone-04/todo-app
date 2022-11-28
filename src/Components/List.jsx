@@ -1,5 +1,6 @@
 import React from "react";
 import Moment from "moment";
+import { Edit, Trash } from "./icons";
 
 const List = ({ todo, setTodo, setEditTodo }) => {
   const editList = ({ id }) => {
@@ -27,18 +28,20 @@ const List = ({ todo, setTodo, setEditTodo }) => {
             {" "}
             <p className="date"> {date} </p>
             <div className="eod">
-              <button
+              {/* <button
                 className="edit__btn eod_btn"
                 onClick={() => editList(todo)}
               >
                 📝
-              </button>{" "}
-              <button
+              </button> */}
+              <Edit onClick={() => editList(todo)} />{" "}
+              {/* <button
                 className="delete__btn eod__btn"
-                onClick={() => deleteTodo(todo)}
+               
               >
                 🗑️
-              </button>{" "}
+              </button>{" "} */}
+              <Trash onClick={() => deleteTodo(todo)} />
             </div>{" "}
           </div>
         </div>
